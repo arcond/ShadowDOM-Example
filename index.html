@@ -9,11 +9,11 @@
 		</div>
 		<div class="quantum"></div>
 		<script>
-			var el = document.querySelector('div.quantum');
-			var template = document.querySelector('#tmpl');
-			var shadow = el.webkitCreateShadowRoot();
-			var rand = Math.floor((Math.random() * 2) + 1);
-			var pulse = rand === 1 ? 'The cat is alive' : 'The cat is dead';
+			var el = document.querySelector('div.quantum'),
+					shadow = el.webkitCreateShadowRoot(),
+					rand = Math.floor((Math.random() * 2) + 1),
+					pulse = rand === 1 ? 'The cat is alive' : 'The cat is dead';
+
 			shadow.innerHTML = '<input placeholder="' + pulse + '"></input>'
 		</script>
 	</body>
